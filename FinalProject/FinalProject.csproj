@@ -51,43 +51,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inek.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Inek.Designer.cs">
-      <DependentUpon>Inek.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Keci.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Keci.Designer.cs">
-      <DependentUpon>Keci.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Ordek.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Ordek.Designer.cs">
-      <DependentUpon>Ordek.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Hayvanlar.cs" />
+    <Compile Include="Inek.cs" />
+    <Compile Include="Keci.cs" />
+    <Compile Include="Ordek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tavuk.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Tavuk.Designer.cs">
-      <DependentUpon>Tavuk.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Tavuk.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Inek.resx">
-      <DependentUpon>Inek.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Keci.resx">
-      <DependentUpon>Keci.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Ordek.resx">
-      <DependentUpon>Ordek.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,9 +70,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Tavuk.resx">
-      <DependentUpon>Tavuk.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

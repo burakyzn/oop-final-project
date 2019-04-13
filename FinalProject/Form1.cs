@@ -24,5 +24,10 @@ namespace FinalProject
         {
             //label1.Font = new Font(label1.Font.FontFamily, label1.Font.Size + 6);
         }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

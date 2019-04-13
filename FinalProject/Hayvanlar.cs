@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    class Inek : Hayvanlar
+    class Hayvanlar
     {
+        int enerji;
+        int harcananEnerji;
+        int urunVermeHizi;
     }
 }
