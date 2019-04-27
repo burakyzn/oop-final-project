@@ -10,13 +10,11 @@ namespace FinalProject
     {
         public int Enerji { get; set; }
         public int HarcananEnerji { get; set; }
-        public int UrunAdeti { get; set; }
         public bool Yasam { get; set; }
 
         public Hayvanlar()
         {
             Enerji = 100;
-            UrunAdeti = 0;
             Yasam = true;
         }
     }
