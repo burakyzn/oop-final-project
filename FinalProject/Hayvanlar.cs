@@ -6,10 +6,18 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    class Hayvanlar
+    abstract class Hayvanlar
     {
-        int enerji;
-        int harcananEnerji;
-        int urunVermeHizi;
+        public int Enerji { get; set; }
+        public int HarcananEnerji { get; set; }
+        public int UrunAdeti { get; set; }
+        public bool Yasam { get; set; }
+
+        public Hayvanlar()
+        {
+            Enerji = 100;
+            UrunAdeti = 0;
+            Yasam = true;
+        }
     }
 }
