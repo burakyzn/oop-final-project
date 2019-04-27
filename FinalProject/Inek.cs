@@ -6,7 +6,33 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    class Inek : Hayvanlar
+    class Inek : Hayvanlar, IHayvan
     {
+        public Inek()
+        {
+            HarcananEnerji = 6;
+        }
+
+        public void YemYe()
+        {
+            Enerji = 100;
+        }
+
+        public void UrunUret()
+        {
+            if (Yasam == true)
+                UrunAdeti++;
+        }
+
+        public void EnerjiHarca()
+        {
+            if (Yasam == true)
+            {
+                if (Enerji >= 6)
+                    Enerji -= HarcananEnerji;
+                else
+                    Enerji -= Enerji;
+            }
+        }
     }
 }
