@@ -28,91 +28,110 @@ namespace FinalProject
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.keciYemBtn = new System.Windows.Forms.Button();
+            this.KeciPrgBar = new System.Windows.Forms.ProgressBar();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.lblKeciYasam = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.inekYemBtn = new System.Windows.Forms.Button();
+            this.inekPrgBar = new System.Windows.Forms.ProgressBar();
+            this.panel27 = new System.Windows.Forms.Panel();
+            this.lblInekYasam = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.ordekYemBtn = new System.Windows.Forms.Button();
+            this.ordekPrgBar = new System.Windows.Forms.ProgressBar();
+            this.panel26 = new System.Windows.Forms.Panel();
+            this.lblOrdekYasam = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tvkYemBtn = new System.Windows.Forms.Button();
+            this.tvkPrgBar = new System.Windows.Forms.ProgressBar();
+            this.panel25 = new System.Windows.Forms.Panel();
+            this.lblTavukYasam = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.lblKasa = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.panel23 = new System.Windows.Forms.Panel();
+            this.lblZaman = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnKeciSat = new System.Windows.Forms.Button();
+            this.btnInekSat = new System.Windows.Forms.Button();
+            this.btnOrdekSat = new System.Windows.Forms.Button();
+            this.btnTavukSat = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
+            this.lblKeciUrun = new System.Windows.Forms.Label();
             this.panel20 = new System.Windows.Forms.Panel();
+            this.lblOrdekUrun = new System.Windows.Forms.Label();
             this.panel21 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.panel22 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.lblInekUrun = new System.Windows.Forms.Label();
             this.panel19 = new System.Windows.Forms.Panel();
+            this.lblTavukUrun = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.progressBar3 = new System.Windows.Forms.ProgressBar();
-            this.panel27 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.progressBar4 = new System.Windows.Forms.ProgressBar();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.tvkTmr = new System.Windows.Forms.Timer(this.components);
+            this.inkTmr = new System.Windows.Forms.Timer(this.components);
+            this.ordkTmr = new System.Windows.Forms.Timer(this.components);
+            this.keciTmr = new System.Windows.Forms.Timer(this.components);
+            this.ciftlikZaman = new System.Windows.Forms.Timer(this.components);
+            this.anlikOlaylar = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel28.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel27.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel26.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel24.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel23.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.panel21.SuspendLayout();
             this.panel22.SuspendLayout();
+            this.panel17.SuspendLayout();
+            this.panel19.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -129,12 +148,12 @@ namespace FinalProject
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel5.Controls.Add(this.button8);
-            this.panel5.Controls.Add(this.progressBar4);
+            this.panel5.Controls.Add(this.keciYemBtn);
+            this.panel5.Controls.Add(this.KeciPrgBar);
             this.panel5.Controls.Add(this.panel28);
             this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Controls.Add(this.button7);
-            this.panel5.Controls.Add(this.progressBar3);
+            this.panel5.Controls.Add(this.inekYemBtn);
+            this.panel5.Controls.Add(this.inekPrgBar);
             this.panel5.Controls.Add(this.panel27);
             this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.panel8);
@@ -142,6 +161,102 @@ namespace FinalProject
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(375, 256);
             this.panel5.TabIndex = 3;
+            // 
+            // keciYemBtn
+            // 
+            this.keciYemBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.keciYemBtn.Location = new System.Drawing.Point(118, 218);
+            this.keciYemBtn.Name = "keciYemBtn";
+            this.keciYemBtn.Size = new System.Drawing.Size(254, 32);
+            this.keciYemBtn.TabIndex = 23;
+            this.keciYemBtn.Text = "YEM VER";
+            this.keciYemBtn.UseVisualStyleBackColor = true;
+            this.keciYemBtn.Click += new System.EventHandler(this.keciYemBtn_Click);
+            // 
+            // KeciPrgBar
+            // 
+            this.KeciPrgBar.Location = new System.Drawing.Point(118, 175);
+            this.KeciPrgBar.Name = "KeciPrgBar";
+            this.KeciPrgBar.Size = new System.Drawing.Size(254, 37);
+            this.KeciPrgBar.TabIndex = 22;
+            // 
+            // panel28
+            // 
+            this.panel28.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel28.Controls.Add(this.lblKeciYasam);
+            this.panel28.Location = new System.Drawing.Point(118, 146);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(254, 23);
+            this.panel28.TabIndex = 21;
+            // 
+            // lblKeciYasam
+            // 
+            this.lblKeciYasam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKeciYasam.ForeColor = System.Drawing.Color.White;
+            this.lblKeciYasam.Location = new System.Drawing.Point(0, 0);
+            this.lblKeciYasam.Name = "lblKeciYasam";
+            this.lblKeciYasam.Size = new System.Drawing.Size(254, 24);
+            this.lblKeciYasam.TabIndex = 0;
+            this.lblKeciYasam.Text = "CANLI";
+            this.lblKeciYasam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(4, 146);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(108, 104);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 20;
+            this.pictureBox4.TabStop = false;
+            // 
+            // inekYemBtn
+            // 
+            this.inekYemBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.inekYemBtn.Location = new System.Drawing.Point(118, 108);
+            this.inekYemBtn.Name = "inekYemBtn";
+            this.inekYemBtn.Size = new System.Drawing.Size(254, 32);
+            this.inekYemBtn.TabIndex = 19;
+            this.inekYemBtn.Text = "YEM VER";
+            this.inekYemBtn.UseVisualStyleBackColor = true;
+            this.inekYemBtn.Click += new System.EventHandler(this.inekYemBtn_Click);
+            // 
+            // inekPrgBar
+            // 
+            this.inekPrgBar.Location = new System.Drawing.Point(118, 65);
+            this.inekPrgBar.Name = "inekPrgBar";
+            this.inekPrgBar.Size = new System.Drawing.Size(254, 37);
+            this.inekPrgBar.TabIndex = 18;
+            // 
+            // panel27
+            // 
+            this.panel27.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel27.Controls.Add(this.lblInekYasam);
+            this.panel27.Location = new System.Drawing.Point(118, 36);
+            this.panel27.Name = "panel27";
+            this.panel27.Size = new System.Drawing.Size(254, 23);
+            this.panel27.TabIndex = 17;
+            // 
+            // lblInekYasam
+            // 
+            this.lblInekYasam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblInekYasam.ForeColor = System.Drawing.Color.White;
+            this.lblInekYasam.Location = new System.Drawing.Point(0, 0);
+            this.lblInekYasam.Name = "lblInekYasam";
+            this.lblInekYasam.Size = new System.Drawing.Size(254, 24);
+            this.lblInekYasam.TabIndex = 0;
+            this.lblInekYasam.Text = "CANLI";
+            this.lblInekYasam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(4, 36);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(108, 104);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
             // 
             // panel8
             // 
@@ -166,12 +281,12 @@ namespace FinalProject
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel6.Controls.Add(this.button6);
-            this.panel6.Controls.Add(this.progressBar2);
+            this.panel6.Controls.Add(this.ordekYemBtn);
+            this.panel6.Controls.Add(this.ordekPrgBar);
             this.panel6.Controls.Add(this.panel26);
             this.panel6.Controls.Add(this.pictureBox2);
-            this.panel6.Controls.Add(this.button5);
-            this.panel6.Controls.Add(this.progressBar1);
+            this.panel6.Controls.Add(this.tvkYemBtn);
+            this.panel6.Controls.Add(this.tvkPrgBar);
             this.panel6.Controls.Add(this.panel25);
             this.panel6.Controls.Add(this.pictureBox1);
             this.panel6.Controls.Add(this.panel7);
@@ -179,6 +294,103 @@ namespace FinalProject
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(375, 256);
             this.panel6.TabIndex = 2;
+            // 
+            // ordekYemBtn
+            // 
+            this.ordekYemBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.ordekYemBtn.Location = new System.Drawing.Point(118, 218);
+            this.ordekYemBtn.Name = "ordekYemBtn";
+            this.ordekYemBtn.Size = new System.Drawing.Size(254, 32);
+            this.ordekYemBtn.TabIndex = 19;
+            this.ordekYemBtn.Text = "YEM VER";
+            this.ordekYemBtn.UseVisualStyleBackColor = true;
+            this.ordekYemBtn.Click += new System.EventHandler(this.ordekYemBtn_Click);
+            // 
+            // ordekPrgBar
+            // 
+            this.ordekPrgBar.Location = new System.Drawing.Point(118, 175);
+            this.ordekPrgBar.Name = "ordekPrgBar";
+            this.ordekPrgBar.Size = new System.Drawing.Size(254, 37);
+            this.ordekPrgBar.TabIndex = 18;
+            // 
+            // panel26
+            // 
+            this.panel26.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel26.Controls.Add(this.lblOrdekYasam);
+            this.panel26.Location = new System.Drawing.Point(118, 146);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(254, 23);
+            this.panel26.TabIndex = 17;
+            // 
+            // lblOrdekYasam
+            // 
+            this.lblOrdekYasam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOrdekYasam.ForeColor = System.Drawing.Color.White;
+            this.lblOrdekYasam.Location = new System.Drawing.Point(0, 0);
+            this.lblOrdekYasam.Name = "lblOrdekYasam";
+            this.lblOrdekYasam.Size = new System.Drawing.Size(254, 24);
+            this.lblOrdekYasam.TabIndex = 0;
+            this.lblOrdekYasam.Text = "CANLI";
+            this.lblOrdekYasam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(4, 146);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(108, 104);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // tvkYemBtn
+            // 
+            this.tvkYemBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tvkYemBtn.Location = new System.Drawing.Point(118, 108);
+            this.tvkYemBtn.Name = "tvkYemBtn";
+            this.tvkYemBtn.Size = new System.Drawing.Size(254, 32);
+            this.tvkYemBtn.TabIndex = 15;
+            this.tvkYemBtn.Text = "YEM VER";
+            this.tvkYemBtn.UseVisualStyleBackColor = true;
+            this.tvkYemBtn.Click += new System.EventHandler(this.tvkYemBtn_Click);
+            // 
+            // tvkPrgBar
+            // 
+            this.tvkPrgBar.Location = new System.Drawing.Point(118, 65);
+            this.tvkPrgBar.Name = "tvkPrgBar";
+            this.tvkPrgBar.Size = new System.Drawing.Size(254, 37);
+            this.tvkPrgBar.TabIndex = 14;
+            this.tvkPrgBar.Click += new System.EventHandler(this.tvkPrgBar_Click);
+            // 
+            // panel25
+            // 
+            this.panel25.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.panel25.Controls.Add(this.lblTavukYasam);
+            this.panel25.Location = new System.Drawing.Point(118, 36);
+            this.panel25.Name = "panel25";
+            this.panel25.Size = new System.Drawing.Size(254, 23);
+            this.panel25.TabIndex = 13;
+            // 
+            // lblTavukYasam
+            // 
+            this.lblTavukYasam.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTavukYasam.ForeColor = System.Drawing.Color.White;
+            this.lblTavukYasam.Location = new System.Drawing.Point(0, 0);
+            this.lblTavukYasam.Name = "lblTavukYasam";
+            this.lblTavukYasam.Size = new System.Drawing.Size(254, 24);
+            this.lblTavukYasam.TabIndex = 0;
+            this.lblTavukYasam.Text = "CANLI";
+            this.lblTavukYasam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(4, 36);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(108, 104);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
             // 
             // panel7
             // 
@@ -223,6 +435,25 @@ namespace FinalProject
             this.panel13.Size = new System.Drawing.Size(152, 126);
             this.panel13.TabIndex = 3;
             // 
+            // panel24
+            // 
+            this.panel24.BackColor = System.Drawing.Color.White;
+            this.panel24.Controls.Add(this.lblKasa);
+            this.panel24.Location = new System.Drawing.Point(3, 37);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(146, 83);
+            this.panel24.TabIndex = 4;
+            // 
+            // lblKasa
+            // 
+            this.lblKasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKasa.Location = new System.Drawing.Point(3, 0);
+            this.lblKasa.Name = "lblKasa";
+            this.lblKasa.Size = new System.Drawing.Size(140, 83);
+            this.lblKasa.TabIndex = 2;
+            this.lblKasa.Text = "0";
+            this.lblKasa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
@@ -253,6 +484,25 @@ namespace FinalProject
             this.panel10.Size = new System.Drawing.Size(152, 124);
             this.panel10.TabIndex = 2;
             // 
+            // panel23
+            // 
+            this.panel23.BackColor = System.Drawing.Color.White;
+            this.panel23.Controls.Add(this.lblZaman);
+            this.panel23.Location = new System.Drawing.Point(3, 37);
+            this.panel23.Name = "panel23";
+            this.panel23.Size = new System.Drawing.Size(146, 83);
+            this.panel23.TabIndex = 3;
+            // 
+            // lblZaman
+            // 
+            this.lblZaman.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblZaman.Location = new System.Drawing.Point(3, 0);
+            this.lblZaman.Name = "lblZaman";
+            this.lblZaman.Size = new System.Drawing.Size(140, 83);
+            this.lblZaman.TabIndex = 1;
+            this.lblZaman.Text = "0";
+            this.lblZaman.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(125)))), ((int)(((byte)(0)))));
@@ -276,55 +526,59 @@ namespace FinalProject
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.button2);
-            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.btnKeciSat);
+            this.panel4.Controls.Add(this.btnInekSat);
+            this.panel4.Controls.Add(this.btnOrdekSat);
+            this.panel4.Controls.Add(this.btnTavukSat);
             this.panel4.Controls.Add(this.panel11);
             this.panel4.Location = new System.Drawing.Point(397, 12);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(217, 256);
             this.panel4.TabIndex = 1;
             // 
-            // button4
+            // btnKeciSat
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(3, 199);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(211, 48);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Keçi Sütü Sat";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnKeciSat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnKeciSat.Location = new System.Drawing.Point(3, 199);
+            this.btnKeciSat.Name = "btnKeciSat";
+            this.btnKeciSat.Size = new System.Drawing.Size(211, 48);
+            this.btnKeciSat.TabIndex = 5;
+            this.btnKeciSat.Text = "Keçi Sütü Sat";
+            this.btnKeciSat.UseVisualStyleBackColor = true;
+            this.btnKeciSat.Click += new System.EventHandler(this.btnKeciSat_Click);
             // 
-            // button3
+            // btnInekSat
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(3, 145);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(211, 48);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Ýnek Sütü Sat";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnInekSat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnInekSat.Location = new System.Drawing.Point(3, 145);
+            this.btnInekSat.Name = "btnInekSat";
+            this.btnInekSat.Size = new System.Drawing.Size(211, 48);
+            this.btnInekSat.TabIndex = 4;
+            this.btnInekSat.Text = "Ýnek Sütü Sat";
+            this.btnInekSat.UseVisualStyleBackColor = true;
+            this.btnInekSat.Click += new System.EventHandler(this.btnInekSat_Click);
             // 
-            // button2
+            // btnOrdekSat
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(3, 91);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 48);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Ördek Yumurtasý Sat";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnOrdekSat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOrdekSat.Location = new System.Drawing.Point(3, 91);
+            this.btnOrdekSat.Name = "btnOrdekSat";
+            this.btnOrdekSat.Size = new System.Drawing.Size(211, 48);
+            this.btnOrdekSat.TabIndex = 3;
+            this.btnOrdekSat.Text = "Ördek Yumurtasý Sat";
+            this.btnOrdekSat.UseVisualStyleBackColor = true;
+            this.btnOrdekSat.Click += new System.EventHandler(this.btnOrdekSat_Click);
             // 
-            // button1
+            // btnTavukSat
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(3, 37);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 48);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Tavuk Yumurtasý Sat";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnTavukSat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTavukSat.Location = new System.Drawing.Point(3, 37);
+            this.btnTavukSat.Name = "btnTavukSat";
+            this.btnTavukSat.Size = new System.Drawing.Size(211, 48);
+            this.btnTavukSat.TabIndex = 2;
+            this.btnTavukSat.Text = "Tavuk Yumurtasý Sat";
+            this.btnTavukSat.UseVisualStyleBackColor = true;
+            this.btnTavukSat.Click += new System.EventHandler(this.btnTavukSat_Click);
             // 
             // panel11
             // 
@@ -366,18 +620,40 @@ namespace FinalProject
             // panel18
             // 
             this.panel18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel18.Controls.Add(this.lblKeciUrun);
             this.panel18.Location = new System.Drawing.Point(191, 192);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(180, 54);
             this.panel18.TabIndex = 8;
             // 
+            // lblKeciUrun
+            // 
+            this.lblKeciUrun.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblKeciUrun.Location = new System.Drawing.Point(3, 7);
+            this.lblKeciUrun.Name = "lblKeciUrun";
+            this.lblKeciUrun.Size = new System.Drawing.Size(175, 40);
+            this.lblKeciUrun.TabIndex = 1;
+            this.lblKeciUrun.Text = "0";
+            this.lblKeciUrun.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel20
             // 
             this.panel20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel20.Controls.Add(this.lblOrdekUrun);
             this.panel20.Location = new System.Drawing.Point(2, 192);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(181, 54);
             this.panel20.TabIndex = 5;
+            // 
+            // lblOrdekUrun
+            // 
+            this.lblOrdekUrun.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblOrdekUrun.Location = new System.Drawing.Point(3, 7);
+            this.lblOrdekUrun.Name = "lblOrdekUrun";
+            this.lblOrdekUrun.Size = new System.Drawing.Size(175, 40);
+            this.lblOrdekUrun.TabIndex = 1;
+            this.lblOrdekUrun.Text = "0";
+            this.lblOrdekUrun.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel21
             // 
@@ -418,23 +694,44 @@ namespace FinalProject
             this.label9.TabIndex = 3;
             this.label9.Text = "Ördek Yumurtasý";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel17
             // 
             this.panel17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel17.Controls.Add(this.lblInekUrun);
             this.panel17.Location = new System.Drawing.Point(191, 84);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(180, 54);
             this.panel17.TabIndex = 4;
             // 
+            // lblInekUrun
+            // 
+            this.lblInekUrun.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblInekUrun.Location = new System.Drawing.Point(3, 7);
+            this.lblInekUrun.Name = "lblInekUrun";
+            this.lblInekUrun.Size = new System.Drawing.Size(175, 40);
+            this.lblInekUrun.TabIndex = 1;
+            this.lblInekUrun.Text = "0";
+            this.lblInekUrun.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel19
             // 
             this.panel19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel19.Controls.Add(this.lblTavukUrun);
             this.panel19.Location = new System.Drawing.Point(2, 84);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(181, 54);
             this.panel19.TabIndex = 2;
+            // 
+            // lblTavukUrun
+            // 
+            this.lblTavukUrun.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTavukUrun.Location = new System.Drawing.Point(3, 7);
+            this.lblTavukUrun.Name = "lblTavukUrun";
+            this.lblTavukUrun.Size = new System.Drawing.Size(175, 40);
+            this.lblTavukUrun.TabIndex = 0;
+            this.lblTavukUrun.Text = "0";
+            this.lblTavukUrun.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel16
             // 
@@ -496,209 +793,40 @@ namespace FinalProject
             this.label1.Text = "Ürün Deposu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel23
+            // tvkTmr
             // 
-            this.panel23.BackColor = System.Drawing.Color.White;
-            this.panel23.Location = new System.Drawing.Point(3, 37);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(146, 83);
-            this.panel23.TabIndex = 3;
+            this.tvkTmr.Enabled = true;
+            this.tvkTmr.Interval = 3000;
+            this.tvkTmr.Tick += new System.EventHandler(this.tvkTmr_Tick);
             // 
-            // panel24
+            // inkTmr
             // 
-            this.panel24.BackColor = System.Drawing.Color.White;
-            this.panel24.Location = new System.Drawing.Point(3, 37);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(146, 83);
-            this.panel24.TabIndex = 4;
+            this.inkTmr.Enabled = true;
+            this.inkTmr.Interval = 8000;
+            this.inkTmr.Tick += new System.EventHandler(this.inkTmr_Tick);
             // 
-            // button5
+            // ordkTmr
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button5.Location = new System.Drawing.Point(118, 108);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(254, 32);
-            this.button5.TabIndex = 15;
-            this.button5.Text = "YEM VER";
-            this.button5.UseVisualStyleBackColor = true;
+            this.ordkTmr.Enabled = true;
+            this.ordkTmr.Interval = 5000;
+            this.ordkTmr.Tick += new System.EventHandler(this.ordkTmr_Tick);
             // 
-            // progressBar1
+            // keciTmr
             // 
-            this.progressBar1.Location = new System.Drawing.Point(118, 65);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(254, 37);
-            this.progressBar1.TabIndex = 14;
+            this.keciTmr.Enabled = true;
+            this.keciTmr.Interval = 7000;
+            this.keciTmr.Tick += new System.EventHandler(this.keciTmr_Tick);
             // 
-            // panel25
+            // ciftlikZaman
             // 
-            this.panel25.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel25.Controls.Add(this.label11);
-            this.panel25.Location = new System.Drawing.Point(118, 36);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(254, 23);
-            this.panel25.TabIndex = 13;
+            this.ciftlikZaman.Enabled = true;
+            this.ciftlikZaman.Interval = 1000;
+            this.ciftlikZaman.Tick += new System.EventHandler(this.ciftlikZaman_Tick);
             // 
-            // label11
+            // anlikOlaylar
             // 
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(0, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(254, 24);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "CANLI";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 36);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(108, 104);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.Location = new System.Drawing.Point(118, 218);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(254, 32);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "YEM VER";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // progressBar2
-            // 
-            this.progressBar2.Location = new System.Drawing.Point(118, 175);
-            this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(254, 37);
-            this.progressBar2.TabIndex = 18;
-            // 
-            // panel26
-            // 
-            this.panel26.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel26.Controls.Add(this.label12);
-            this.panel26.Location = new System.Drawing.Point(118, 146);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(254, 23);
-            this.panel26.TabIndex = 17;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(0, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(254, 24);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "CANLI";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(4, 146);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(108, 104);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 16;
-            this.pictureBox2.TabStop = false;
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.Location = new System.Drawing.Point(118, 108);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(254, 32);
-            this.button7.TabIndex = 19;
-            this.button7.Text = "YEM VER";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // progressBar3
-            // 
-            this.progressBar3.Location = new System.Drawing.Point(118, 65);
-            this.progressBar3.Name = "progressBar3";
-            this.progressBar3.Size = new System.Drawing.Size(254, 37);
-            this.progressBar3.TabIndex = 18;
-            // 
-            // panel27
-            // 
-            this.panel27.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel27.Controls.Add(this.label13);
-            this.panel27.Location = new System.Drawing.Point(118, 36);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(254, 23);
-            this.panel27.TabIndex = 17;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(0, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(254, 24);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "CANLI";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(4, 36);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(108, 104);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button8.Location = new System.Drawing.Point(118, 218);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(254, 32);
-            this.button8.TabIndex = 23;
-            this.button8.Text = "YEM VER";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // progressBar4
-            // 
-            this.progressBar4.Location = new System.Drawing.Point(118, 175);
-            this.progressBar4.Name = "progressBar4";
-            this.progressBar4.Size = new System.Drawing.Size(254, 37);
-            this.progressBar4.TabIndex = 22;
-            // 
-            // panel28
-            // 
-            this.panel28.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel28.Controls.Add(this.label14);
-            this.panel28.Location = new System.Drawing.Point(118, 146);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(254, 23);
-            this.panel28.TabIndex = 21;
-            // 
-            // label14
-            // 
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(0, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(254, 24);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "CANLI";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(4, 146);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(108, 104);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 20;
-            this.pictureBox4.TabStop = false;
+            this.anlikOlaylar.Enabled = true;
+            this.anlikOlaylar.Tick += new System.EventHandler(this.anlikOlaylar_Tick);
             // 
             // Form1
             // 
@@ -714,30 +842,36 @@ namespace FinalProject
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel28.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel27.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.panel26.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel25.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
+            this.panel23.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
+            this.panel17.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel15.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel26.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel27.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel28.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -776,32 +910,44 @@ namespace FinalProject
         private System.Windows.Forms.Panel panel15;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnKeciSat;
+        private System.Windows.Forms.Button btnInekSat;
+        private System.Windows.Forms.Button btnOrdekSat;
+        private System.Windows.Forms.Button btnTavukSat;
         private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Button tvkYemBtn;
+        private System.Windows.Forms.ProgressBar tvkPrgBar;
         private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblTavukYasam;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.Button ordekYemBtn;
+        private System.Windows.Forms.ProgressBar ordekPrgBar;
         private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblOrdekYasam;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.ProgressBar progressBar3;
+        private System.Windows.Forms.Button inekYemBtn;
+        private System.Windows.Forms.ProgressBar inekPrgBar;
         private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblInekYasam;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.ProgressBar progressBar4;
+        private System.Windows.Forms.Button keciYemBtn;
+        private System.Windows.Forms.ProgressBar KeciPrgBar;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblKeciYasam;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label lblKasa;
+        private System.Windows.Forms.Label lblZaman;
+        private System.Windows.Forms.Label lblKeciUrun;
+        private System.Windows.Forms.Label lblOrdekUrun;
+        private System.Windows.Forms.Label lblInekUrun;
+        private System.Windows.Forms.Label lblTavukUrun;
+        private System.Windows.Forms.Timer tvkTmr;
+        private System.Windows.Forms.Timer inkTmr;
+        private System.Windows.Forms.Timer ordkTmr;
+        private System.Windows.Forms.Timer keciTmr;
+        private System.Windows.Forms.Timer ciftlikZaman;
+        private System.Windows.Forms.Timer anlikOlaylar;
     }
 }
 
