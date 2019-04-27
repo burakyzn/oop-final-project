@@ -52,6 +52,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Hayvanlar.cs" />
+    <Compile Include="IHayvan.cs" />
     <Compile Include="Inek.cs" />
     <Compile Include="Keci.cs" />
     <Compile Include="Ordek.cs" />
