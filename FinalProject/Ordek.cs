@@ -18,10 +18,10 @@ namespace FinalProject
             Enerji=100;
         }
 
-        public void UrunUret()
+        public void UrunUret(ref int adet)
         {
             if (Yasam == true)
-                UrunAdeti++;
+                adet++;
         }
 
         public void EnerjiHarca()
