@@ -94,12 +94,8 @@ namespace FinalProject
             this.label7 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.tvkTmr = new System.Windows.Forms.Timer(this.components);
-            this.inkTmr = new System.Windows.Forms.Timer(this.components);
-            this.ordkTmr = new System.Windows.Forms.Timer(this.components);
-            this.keciTmr = new System.Windows.Forms.Timer(this.components);
-            this.ciftlikZaman = new System.Windows.Forms.Timer(this.components);
             this.anlikOlaylar = new System.Windows.Forms.Timer(this.components);
+            this.ciftlikZamani = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel28.SuspendLayout();
@@ -360,7 +356,6 @@ namespace FinalProject
             this.tvkPrgBar.Name = "tvkPrgBar";
             this.tvkPrgBar.Size = new System.Drawing.Size(254, 37);
             this.tvkPrgBar.TabIndex = 14;
-            this.tvkPrgBar.Click += new System.EventHandler(this.tvkPrgBar_Click);
             // 
             // panel25
             // 
@@ -793,40 +788,16 @@ namespace FinalProject
             this.label1.Text = "Ürün Deposu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tvkTmr
-            // 
-            this.tvkTmr.Enabled = true;
-            this.tvkTmr.Interval = 3000;
-            this.tvkTmr.Tick += new System.EventHandler(this.tvkTmr_Tick);
-            // 
-            // inkTmr
-            // 
-            this.inkTmr.Enabled = true;
-            this.inkTmr.Interval = 8000;
-            this.inkTmr.Tick += new System.EventHandler(this.inkTmr_Tick);
-            // 
-            // ordkTmr
-            // 
-            this.ordkTmr.Enabled = true;
-            this.ordkTmr.Interval = 5000;
-            this.ordkTmr.Tick += new System.EventHandler(this.ordkTmr_Tick);
-            // 
-            // keciTmr
-            // 
-            this.keciTmr.Enabled = true;
-            this.keciTmr.Interval = 7000;
-            this.keciTmr.Tick += new System.EventHandler(this.keciTmr_Tick);
-            // 
-            // ciftlikZaman
-            // 
-            this.ciftlikZaman.Enabled = true;
-            this.ciftlikZaman.Interval = 1000;
-            this.ciftlikZaman.Tick += new System.EventHandler(this.ciftlikZaman_Tick);
-            // 
             // anlikOlaylar
             // 
             this.anlikOlaylar.Enabled = true;
             this.anlikOlaylar.Tick += new System.EventHandler(this.anlikOlaylar_Tick);
+            // 
+            // ciftlikZamani
+            // 
+            this.ciftlikZamani.Enabled = true;
+            this.ciftlikZamani.Interval = 1000;
+            this.ciftlikZamani.Tick += new System.EventHandler(this.ciftlikZamani_Tick);
             // 
             // Form1
             // 
@@ -942,12 +913,8 @@ namespace FinalProject
         private System.Windows.Forms.Label lblOrdekUrun;
         private System.Windows.Forms.Label lblInekUrun;
         private System.Windows.Forms.Label lblTavukUrun;
-        private System.Windows.Forms.Timer tvkTmr;
-        private System.Windows.Forms.Timer inkTmr;
-        private System.Windows.Forms.Timer ordkTmr;
-        private System.Windows.Forms.Timer keciTmr;
-        private System.Windows.Forms.Timer ciftlikZaman;
         private System.Windows.Forms.Timer anlikOlaylar;
+        private System.Windows.Forms.Timer ciftlikZamani;
     }
 }
 
