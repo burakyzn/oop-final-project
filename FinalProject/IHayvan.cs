@@ -9,7 +9,6 @@ namespace FinalProject
     interface IHayvan
     {
         void YemYe();
-        void UrunUret();
         void EnerjiHarca();
     }
 }
