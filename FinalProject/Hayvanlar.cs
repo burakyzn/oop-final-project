@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    abstract class Hayvanlar
+    abstract class Hayvanlar : IHayvan
     {
         public int Enerji { get; set; }
         public int HarcananEnerji { get; set; }
@@ -17,5 +17,9 @@ namespace FinalProject
             Enerji = 100;
             Yasam = true;
         }
+
+        abstract public void YemYe();
+
+        abstract public void EnerjiHarca();
     }
 }

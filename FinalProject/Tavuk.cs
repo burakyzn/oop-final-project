@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace FinalProject
 {
-    class Tavuk : Hayvanlar, IHayvan
+    class Tavuk : Hayvanlar
     {
         public Tavuk()
         {
             HarcananEnerji = 2;
         }
 
-        public void YemYe()
+        public override void YemYe()
         {
             Enerji = 100;
         }
@@ -24,7 +24,7 @@ namespace FinalProject
                 adet++;
         }
 
-        public void EnerjiHarca()
+        public override void EnerjiHarca()
         {
             if(Yasam == true)
             {
