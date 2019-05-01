@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FinalProject
+﻿namespace FinalProject
 {
     class Ciftlik
     {
@@ -15,6 +9,14 @@ namespace FinalProject
         public int CiftlikZamani { get; set; }
         public int KasaParasi { get; set;}
         public int[] urunAdetleri;
+        enum Hayvanlar
+        {
+             e_tavuk = 0,
+            e_ordek = 1,
+            e_keci = 2,
+            e_inek = 3
+        }
+
 
         public Ciftlik()
         {
@@ -22,6 +24,8 @@ namespace FinalProject
             ordek = new Ordek();
             inek = new Inek();
             keci = new Keci();
+
+
 
             CiftlikZamani = 0;
             KasaParasi = 0;
@@ -77,26 +81,26 @@ namespace FinalProject
 
         public void tavukYumurtasiSat()
         {
-            urunAdetleri[0]--;
-            KasaParasi++;
+            KasaParasi += urunAdetleri[0];
+            urunAdetleri[(int)Hayvanlar.e_tavuk] = 0;
         }
 
         public void ordekYumurtasiSat()
         {
-            urunAdetleri[1]--;
-            KasaParasi += 3;
+            KasaParasi += (3 * urunAdetleri[1]);
+            urunAdetleri[(int)Hayvanlar.e_ordek] = 0;
+        }
+
+        public void KeciSutuSat()
+        {
+            KasaParasi += (8 * urunAdetleri[2]);
+            urunAdetleri[(int)Hayvanlar.e_keci] = 0;
         }
 
         public void inekSutuSat()
         {
-            urunAdetleri[3]--;
-            KasaParasi += 5;
-        }
-
-        internal void KeciSutuSat()
-        {
-            urunAdetleri[2]--;
-            KasaParasi += 8;
+            KasaParasi += (5 * urunAdetleri[3]);
+            urunAdetleri[(int)Hayvanlar.e_inek] = 0;
         }
     }
 }
