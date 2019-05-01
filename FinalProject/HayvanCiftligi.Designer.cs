@@ -813,7 +813,7 @@ namespace FinalProject
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "HayvanCiftligi";
             this.Text = "Hayvan Çiftliði";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.HayvanCiftligi_Load);
             this.panel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel28.ResumeLayout(false);
