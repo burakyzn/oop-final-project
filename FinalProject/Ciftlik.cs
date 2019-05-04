@@ -17,7 +17,6 @@
             e_inek = 3
         }
 
-
         public Ciftlik()
         {
             tavuk = new Tavuk();
@@ -39,7 +38,7 @@
                 tavuk.YemYe();
         }
 
-        public void İnekYemle()
+        public void InekYemle()
         {
             if (inek.Yasam == true)
                 inek.YemYe();
@@ -95,7 +94,7 @@
             UrunAdetleri[(int)Hayvanlar.e_keci] = 0;
         }
 
-        public void İnekSutuSat()
+        public void InekSutuSat()
         {
             KasaParasi += (5 * UrunAdetleri[3]);
             UrunAdetleri[(int)Hayvanlar.e_inek] = 0;
