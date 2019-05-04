@@ -1,11 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 
@@ -35,9 +28,9 @@ namespace FinalProject
             YeniCiftligim.TavukYemle();
         }
 
-        private void ÝnekYemBtn_Click(object sender, EventArgs e)
+        private void InekYemBtn_Click(object sender, EventArgs e)
         {
-            YeniCiftligim.ÝnekYemle();
+            YeniCiftligim.InekYemle();
         }
 
         private void KeciYemBtn_Click(object sender, EventArgs e)
@@ -52,8 +45,8 @@ namespace FinalProject
 
         private void AnlikOlaylar_Tick(object sender, EventArgs e)
         {
-            lblZaman.Text = YeniCiftligim.CiftlikZamani.ToString();
-            lblKasa.Text = YeniCiftligim.KasaParasi.ToString();
+            lblZaman.Text = YeniCiftligim.CiftlikZamani.ToString() + " SN";
+            lblKasa.Text = YeniCiftligim.KasaParasi.ToString() + " TL";
 
             if(YeniCiftligim.inek.Yasam == true)
             {
@@ -122,10 +115,10 @@ namespace FinalProject
                     KeciPrgBar.Value = YeniCiftligim.keci.Enerji;
             }
 
-            lblTavukUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_tavuk].ToString();
-            lblOrdekUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_ordek].ToString();
-            lblKeciUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_keci].ToString();
-            lblInekUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_inek].ToString();
+            lblTavukUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_tavuk].ToString() + " Adet";
+            lblOrdekUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_ordek].ToString() + " Adet";
+            lblKeciUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_keci].ToString() + " Litre";
+            lblInekUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_inek].ToString() + " Litre";
         }
 
         private void BtnTavukSat_Click(object sender, EventArgs e)
@@ -148,7 +141,7 @@ namespace FinalProject
         {
             if (YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_inek] != 0)
             {
-                YeniCiftligim.ÝnekSutuSat();
+                YeniCiftligim.InekSutuSat();
             }
         }
 
