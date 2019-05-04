@@ -13,7 +13,7 @@ namespace FinalProject
 {
     public partial class HayvanCiftligi : Form
     {
-        Ciftlik yeniCiftligim;
+        Ciftlik YeniCiftligim;
         public HayvanCiftligi()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace FinalProject
 
         private void HayvanCiftligi_Load(object sender, EventArgs e)
         {
-            yeniCiftligim = new Ciftlik();
+            YeniCiftligim = new Ciftlik();
 
             tvkPrgBar.Value = 100;
             inekPrgBar.Value = 100;
@@ -30,36 +30,36 @@ namespace FinalProject
 
         }
 
-        private void tvkYemBtn_Click(object sender, EventArgs e)
+        private void TvkYemBtn_Click(object sender, EventArgs e)
         {
-            yeniCiftligim.tavukYemle();
+            YeniCiftligim.TavukYemle();
         }
 
-        private void inekYemBtn_Click(object sender, EventArgs e)
+        private void ÝnekYemBtn_Click(object sender, EventArgs e)
         {
-            yeniCiftligim.inekYemle();
+            YeniCiftligim.ÝnekYemle();
         }
 
-        private void keciYemBtn_Click(object sender, EventArgs e)
+        private void KeciYemBtn_Click(object sender, EventArgs e)
         {
-            yeniCiftligim.keciYemle();
+            YeniCiftligim.KeciYemle();
         }
 
-        private void ordekYemBtn_Click(object sender, EventArgs e)
+        private void OrdekYemBtn_Click(object sender, EventArgs e)
         {
-            yeniCiftligim.ordekYemle();
+            YeniCiftligim.OrdekYemle();
         }
 
-        private void anlikOlaylar_Tick(object sender, EventArgs e)
+        private void AnlikOlaylar_Tick(object sender, EventArgs e)
         {
-            lblZaman.Text = yeniCiftligim.CiftlikZamani.ToString();
-            lblKasa.Text = yeniCiftligim.KasaParasi.ToString();
+            lblZaman.Text = YeniCiftligim.CiftlikZamani.ToString();
+            lblKasa.Text = YeniCiftligim.KasaParasi.ToString();
 
-            if(yeniCiftligim.inek.Yasam == true)
+            if(YeniCiftligim.inek.Yasam == true)
             {
                 if (inekPrgBar.Value <= 0)
                 {
-                    yeniCiftligim.inek.Yasam = false;
+                    YeniCiftligim.inek.Yasam = false;
                     lblInekYasam.Text = "ÖLÜ";
 
                     SoundPlayer inekSes = new SoundPlayer();
@@ -68,15 +68,15 @@ namespace FinalProject
                     inekSes.Play();
                 }
                 else
-                    inekPrgBar.Value = yeniCiftligim.inek.Enerji;
+                    inekPrgBar.Value = YeniCiftligim.inek.Enerji;
                 
             }
 
-            if(yeniCiftligim.tavuk.Yasam == true)
+            if(YeniCiftligim.tavuk.Yasam == true)
             {
                 if (tvkPrgBar.Value <= 0)
                 {
-                    yeniCiftligim.tavuk.Yasam = false;
+                    YeniCiftligim.tavuk.Yasam = false;
                     lblTavukYasam.Text = "ÖLÜ";
 
                     SoundPlayer tavukSes = new SoundPlayer();
@@ -85,15 +85,15 @@ namespace FinalProject
                     tavukSes.Play();
                 }
                 else
-                    tvkPrgBar.Value = yeniCiftligim.tavuk.Enerji;
+                    tvkPrgBar.Value = YeniCiftligim.tavuk.Enerji;
 
             }
 
-            if (yeniCiftligim.ordek.Yasam == true)
+            if (YeniCiftligim.ordek.Yasam == true)
             {
                 if (ordekPrgBar.Value <= 0)
                 {
-                    yeniCiftligim.ordek.Yasam = false;
+                    YeniCiftligim.ordek.Yasam = false;
                     lblOrdekYasam.Text = "ÖLÜ";
 
                     SoundPlayer ordekSes = new SoundPlayer();
@@ -102,15 +102,15 @@ namespace FinalProject
                     ordekSes.Play();
                 }
                 else
-                    ordekPrgBar.Value = yeniCiftligim.ordek.Enerji;
+                    ordekPrgBar.Value = YeniCiftligim.ordek.Enerji;
 
             }
 
-            if (yeniCiftligim.keci.Yasam == true)
+            if (YeniCiftligim.keci.Yasam == true)
             {
                 if (KeciPrgBar.Value <= 0)
                 {
-                    yeniCiftligim.keci.Yasam = false;
+                    YeniCiftligim.keci.Yasam = false;
                     lblKeciYasam.Text = "ÖLÜ";
 
                     SoundPlayer keciSes = new SoundPlayer();
@@ -119,52 +119,52 @@ namespace FinalProject
                     keciSes.Play();
                 }
                 else
-                    KeciPrgBar.Value = yeniCiftligim.keci.Enerji;
+                    KeciPrgBar.Value = YeniCiftligim.keci.Enerji;
             }
 
-            lblTavukUrun.Text = yeniCiftligim.urunAdetleri[0].ToString();
-            lblOrdekUrun.Text = yeniCiftligim.urunAdetleri[1].ToString();
-            lblKeciUrun.Text = yeniCiftligim.urunAdetleri[2].ToString();
-            lblInekUrun.Text = yeniCiftligim.urunAdetleri[3].ToString();
+            lblTavukUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_tavuk].ToString();
+            lblOrdekUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_ordek].ToString();
+            lblKeciUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_keci].ToString();
+            lblInekUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_inek].ToString();
         }
 
-        private void btnTavukSat_Click(object sender, EventArgs e)
+        private void BtnTavukSat_Click(object sender, EventArgs e)
         {
-            if (lblTavukUrun.Text != "0")
+            if (YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_tavuk] != 0)
             {
-                yeniCiftligim.tavukYumurtasiSat();
+                YeniCiftligim.TavukYumurtasiSat();
             }
         }
 
-        private void btnOrdekSat_Click(object sender, EventArgs e)
+        private void BtnOrdekSat_Click(object sender, EventArgs e)
         {
-            if(lblOrdekUrun.Text != "0")
+            if(YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_ordek] != 0)
             {
-                yeniCiftligim.ordekYumurtasiSat();
+                YeniCiftligim.OrdekYumurtasiSat();
             }
         }
 
-        private void btnInekSat_Click(object sender, EventArgs e)
+        private void BtnInekSat_Click(object sender, EventArgs e)
         {
-            if (lblInekUrun.Text != "0")
+            if (YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_inek] != 0)
             {
-                yeniCiftligim.inekSutuSat();
+                YeniCiftligim.ÝnekSutuSat();
             }
         }
 
-        private void btnKeciSat_Click(object sender, EventArgs e)
+        private void BtnKeciSat_Click(object sender, EventArgs e)
         {
-            if (lblKeciUrun.Text != "0")
+            if (YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_keci] != 0)
             {
-                yeniCiftligim.KeciSutuSat();
+                YeniCiftligim.KeciSutuSat();
             }
         }
 
-        private void ciftlikZamani_Tick(object sender, EventArgs e)
+        private void CiftlikZamani_Tick(object sender, EventArgs e)
         {   
-            yeniCiftligim.CiftlikZamani++;
-            yeniCiftligim.urunUret();
-            yeniCiftligim.enerjiHarca();
+            YeniCiftligim.CiftlikZamani++;
+            YeniCiftligim.UrunUret();
+            YeniCiftligim.EnerjiHarca();
         }
     }
 }
