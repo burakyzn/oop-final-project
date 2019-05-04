@@ -167,7 +167,7 @@ namespace FinalProject
             this.keciYemBtn.TabIndex = 23;
             this.keciYemBtn.Text = "YEM VER";
             this.keciYemBtn.UseVisualStyleBackColor = true;
-            this.keciYemBtn.Click += new System.EventHandler(this.keciYemBtn_Click);
+            this.keciYemBtn.Click += new System.EventHandler(this.KeciYemBtn_Click);
             // 
             // KeciPrgBar
             // 
@@ -215,7 +215,7 @@ namespace FinalProject
             this.inekYemBtn.TabIndex = 19;
             this.inekYemBtn.Text = "YEM VER";
             this.inekYemBtn.UseVisualStyleBackColor = true;
-            this.inekYemBtn.Click += new System.EventHandler(this.inekYemBtn_Click);
+            this.inekYemBtn.Click += new System.EventHandler(this.InekYemBtn_Click);
             // 
             // inekPrgBar
             // 
@@ -300,7 +300,7 @@ namespace FinalProject
             this.ordekYemBtn.TabIndex = 19;
             this.ordekYemBtn.Text = "YEM VER";
             this.ordekYemBtn.UseVisualStyleBackColor = true;
-            this.ordekYemBtn.Click += new System.EventHandler(this.ordekYemBtn_Click);
+            this.ordekYemBtn.Click += new System.EventHandler(this.OrdekYemBtn_Click);
             // 
             // ordekPrgBar
             // 
@@ -348,7 +348,7 @@ namespace FinalProject
             this.tvkYemBtn.TabIndex = 15;
             this.tvkYemBtn.Text = "YEM VER";
             this.tvkYemBtn.UseVisualStyleBackColor = true;
-            this.tvkYemBtn.Click += new System.EventHandler(this.tvkYemBtn_Click);
+            this.tvkYemBtn.Click += new System.EventHandler(this.TvkYemBtn_Click);
             // 
             // tvkPrgBar
             // 
@@ -540,7 +540,7 @@ namespace FinalProject
             this.btnKeciSat.TabIndex = 5;
             this.btnKeciSat.Text = "Keçi Sütü Sat";
             this.btnKeciSat.UseVisualStyleBackColor = true;
-            this.btnKeciSat.Click += new System.EventHandler(this.btnKeciSat_Click);
+            this.btnKeciSat.Click += new System.EventHandler(this.BtnKeciSat_Click);
             // 
             // btnInekSat
             // 
@@ -551,7 +551,7 @@ namespace FinalProject
             this.btnInekSat.TabIndex = 4;
             this.btnInekSat.Text = "Ýnek Sütü Sat";
             this.btnInekSat.UseVisualStyleBackColor = true;
-            this.btnInekSat.Click += new System.EventHandler(this.btnInekSat_Click);
+            this.btnInekSat.Click += new System.EventHandler(this.BtnInekSat_Click);
             // 
             // btnOrdekSat
             // 
@@ -562,7 +562,7 @@ namespace FinalProject
             this.btnOrdekSat.TabIndex = 3;
             this.btnOrdekSat.Text = "Ördek Yumurtasý Sat";
             this.btnOrdekSat.UseVisualStyleBackColor = true;
-            this.btnOrdekSat.Click += new System.EventHandler(this.btnOrdekSat_Click);
+            this.btnOrdekSat.Click += new System.EventHandler(this.BtnOrdekSat_Click);
             // 
             // btnTavukSat
             // 
@@ -573,7 +573,7 @@ namespace FinalProject
             this.btnTavukSat.TabIndex = 2;
             this.btnTavukSat.Text = "Tavuk Yumurtasý Sat";
             this.btnTavukSat.UseVisualStyleBackColor = true;
-            this.btnTavukSat.Click += new System.EventHandler(this.btnTavukSat_Click);
+            this.btnTavukSat.Click += new System.EventHandler(this.BtnTavukSat_Click);
             // 
             // panel11
             // 
@@ -791,13 +791,13 @@ namespace FinalProject
             // anlikOlaylar
             // 
             this.anlikOlaylar.Enabled = true;
-            this.anlikOlaylar.Tick += new System.EventHandler(this.anlikOlaylar_Tick);
+            this.anlikOlaylar.Tick += new System.EventHandler(this.AnlikOlaylar_Tick);
             // 
             // ciftlikZamani
             // 
             this.ciftlikZamani.Enabled = true;
             this.ciftlikZamani.Interval = 1000;
-            this.ciftlikZamani.Tick += new System.EventHandler(this.ciftlikZamani_Tick);
+            this.ciftlikZamani.Tick += new System.EventHandler(this.CiftlikZamani_Tick);
             // 
             // HayvanCiftligi
             // 
