@@ -16,45 +16,59 @@ namespace FinalProject
         {
             YeniCiftligim = new Ciftlik();
 
-            tvkPrgBar.Value = 100;
-            inekPrgBar.Value = 100;
-            ordekPrgBar.Value = 100;
-            KeciPrgBar.Value = 100;
+            // tum progressbarlarin degerlerini ait olduklari nesnelerin enerjilerine esitledim.
+            tvkPrgBar.Value = YeniCiftligim.tavuk.Enerji;
+            inekPrgBar.Value = YeniCiftligim.inek.Enerji;
+            ordekPrgBar.Value = YeniCiftligim.ordek.Enerji;
+            KeciPrgBar.Value = YeniCiftligim.keci.Enerji;
 
         }
 
         private void TvkYemBtn_Click(object sender, EventArgs e)
         {
+            // tavuk yem butonuna basildiginde ciftlik sifina ait olan yeni ciftligim nesnesinin 
+            // TavukYemle methodu cagrilacaktir.
             YeniCiftligim.TavukYemle();
         }
 
         private void InekYemBtn_Click(object sender, EventArgs e)
-        {
+        {   
+            // inek yem butonuna basildiginde ciftlik sifina ait olan yeni ciftligim nesnesinin 
+            // InekYemle methodu cagrilacaktir.
             YeniCiftligim.InekYemle();
         }
 
         private void KeciYemBtn_Click(object sender, EventArgs e)
         {
+            // keci yem butonuna basildiginde ciftlik sifina ait olan yeni ciftligim nesnesinin 
+            // KeciYemle methodu cagrilacaktir.
             YeniCiftligim.KeciYemle();
         }
 
         private void OrdekYemBtn_Click(object sender, EventArgs e)
         {
+            // ordek yem butonuna basildiginde ciftlik sifina ait olan yeni ciftligim nesnesinin 
+            // OrdekYemle methodu cagrilacaktir.
             YeniCiftligim.OrdekYemle();
         }
 
         private void AnlikOlaylar_Tick(object sender, EventArgs e)
         {
+            // her an zaman ciftlikte donen zamana esit, kasa ciftlikte tutulan paraya esit olacaktir.
             lblZaman.Text = YeniCiftligim.CiftlikZamani.ToString() + " SN";
             lblKasa.Text = YeniCiftligim.KasaParasi.ToString() + " TL";
 
+            // bu 4 blokta olen hayvan var mý kontrol yapýlýyor.
             if(YeniCiftligim.inek.Yasam == true)
             {
-                if (inekPrgBar.Value <= 0)
+                // eger inegin enerjisi 0'in altina dustuyse inek olmustur.
+                if (YeniCiftligim.inek.Enerji <= 0)
                 {
                     YeniCiftligim.inek.Yasam = false;
+                    inekPrgBar.Value = 0;
                     lblInekYasam.Text = "ÖLÜ";
 
+                    // inek olum ses efekti
                     SoundPlayer inekSes = new SoundPlayer();
                     string path = Application.StartupPath.ToString() + "\\inek.wav";
                     inekSes.SoundLocation = path;
@@ -62,16 +76,18 @@ namespace FinalProject
                 }
                 else
                     inekPrgBar.Value = YeniCiftligim.inek.Enerji;
-                
             }
 
             if(YeniCiftligim.tavuk.Yasam == true)
             {
-                if (tvkPrgBar.Value <= 0)
+                // eger tavugun enerjisi 0'in altina dustuyse tavuk olmustur.
+                if (YeniCiftligim.tavuk.Enerji <= 0)
                 {
                     YeniCiftligim.tavuk.Yasam = false;
+                    tvkPrgBar.Value = 0;
                     lblTavukYasam.Text = "ÖLÜ";
 
+                    // tavuk olum ses efekti
                     SoundPlayer tavukSes = new SoundPlayer();
                     string path = Application.StartupPath.ToString() + "\\tavuk.wav";
                     tavukSes.SoundLocation = path;
@@ -84,11 +100,14 @@ namespace FinalProject
 
             if (YeniCiftligim.ordek.Yasam == true)
             {
-                if (ordekPrgBar.Value <= 0)
+                // eger ordek enerjisi 0'in altina dustuyse ordek olmustur.
+                if (YeniCiftligim.ordek.Enerji <= 0)
                 {
                     YeniCiftligim.ordek.Yasam = false;
+                    ordekPrgBar.Value = 0;
                     lblOrdekYasam.Text = "ÖLÜ";
 
+                    // ordek olum ses efekti
                     SoundPlayer ordekSes = new SoundPlayer();
                     string path = Application.StartupPath.ToString() + "\\ordek.wav";
                     ordekSes.SoundLocation = path;
@@ -101,11 +120,14 @@ namespace FinalProject
 
             if (YeniCiftligim.keci.Yasam == true)
             {
-                if (KeciPrgBar.Value <= 0)
+                // eger keci enerjisi 0'in altina dustuyse keci olmustur.
+                if (YeniCiftligim.keci.Enerji <= 0)
                 {
                     YeniCiftligim.keci.Yasam = false;
+                    KeciPrgBar.Value = 0;
                     lblKeciYasam.Text = "ÖLÜ";
 
+                    // keci olum ses efekti
                     SoundPlayer keciSes = new SoundPlayer();
                     string path = Application.StartupPath.ToString() + "\\keci.wav";
                     keciSes.SoundLocation = path;
@@ -115,6 +137,7 @@ namespace FinalProject
                     KeciPrgBar.Value = YeniCiftligim.keci.Enerji;
             }
 
+            // burada ciftlikteki urun adetlerini cekip ekranda gosteriyorum.
             lblTavukUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_tavuk].ToString() + " Adet";
             lblOrdekUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_ordek].ToString() + " Adet";
             lblKeciUrun.Text = YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_keci].ToString() + " Litre";
@@ -123,6 +146,7 @@ namespace FinalProject
 
         private void BtnTavukSat_Click(object sender, EventArgs e)
         {
+            // eger ciftlikte urun varsa satmasi icin method cagriliyor.
             if (YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_tavuk] != 0)
             {
                 YeniCiftligim.TavukYumurtasiSat();
@@ -131,7 +155,8 @@ namespace FinalProject
 
         private void BtnOrdekSat_Click(object sender, EventArgs e)
         {
-            if(YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_ordek] != 0)
+            // eger ciftlikte urun varsa satmasi icin method cagriliyor.
+            if (YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_ordek] != 0)
             {
                 YeniCiftligim.OrdekYumurtasiSat();
             }
@@ -139,6 +164,7 @@ namespace FinalProject
 
         private void BtnInekSat_Click(object sender, EventArgs e)
         {
+            // eger ciftlikte urun varsa satmasi icin method cagriliyor.
             if (YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_inek] != 0)
             {
                 YeniCiftligim.InekSutuSat();
@@ -147,6 +173,7 @@ namespace FinalProject
 
         private void BtnKeciSat_Click(object sender, EventArgs e)
         {
+            // eger ciftlikte urun varsa satmasi icin method cagriliyor.
             if (YeniCiftligim.UrunAdetleri[(int)Ciftlik.Hayvanlar.e_keci] != 0)
             {
                 YeniCiftligim.KeciSutuSat();
@@ -155,7 +182,9 @@ namespace FinalProject
 
         private void CiftlikZamani_Tick(object sender, EventArgs e)
         {   
+            // her saniye ciftlikte gecen zaman 1 saniye arttiriliyor.
             YeniCiftligim.CiftlikZamani++;
+            // her saniye UrunUret ve EnerjiHarca fonksiyonlari cagriliyor.
             YeniCiftligim.UrunUret();
             YeniCiftligim.EnerjiHarca();
         }
